@@ -1,0 +1,11 @@
+gradio==5.36.2
+pandas
+requests
+scikit-learn
+sentence-transformers
+keybert
+torch==2.7.1
+numpy
+openai>=1.10.0
+PyMuPDF>=1.22.0
+pydub==0.25.1

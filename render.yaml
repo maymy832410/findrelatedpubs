@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: manuscript-reviewer
+    env: python
+    runtime: python
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    plan: starter
+    branch: main  # Change if your default branch is not 'main'
+    pythonVersion: 3.13.4
+    envVars:
+      - key: openaikey2
+        sync: false  # Set this securely in the Render dashboard
